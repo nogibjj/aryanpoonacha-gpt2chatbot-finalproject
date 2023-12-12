@@ -1,17 +1,26 @@
+<!DOCTYPE html>
+<html>
 <head>
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-
+</head>
 <body>
     <div class="App">
         <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
+            <img src="{{ url_for('static', filename='robot.jpg') }}" class="App-logo" alt="logo" />
             <p>
-                GitHub Codespaces <span class="heart">♥️</span> Flask
+                Relics Of The Modern Past - Chatting With A Local GPT-2
             </p>
             <p class="small">
-                Edit <code>templates/index.html</code> and refresh to see your changes!
+                Type and click submit to send your prompt to GPT2!
             </p>
+            <form action="/" method="post">
+                <input type="text" name="prompt" placeholder="Enter your prompt here">
+                <input type="submit" value="Submit">
+            </form>
+            {% if response %}
+                <p>{{ response }}</p>
+            {% endif %}
         </header>
     </div>
 </body>
