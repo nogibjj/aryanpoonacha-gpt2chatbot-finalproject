@@ -16,4 +16,4 @@ transformers
 tensorflow
 
 #web dev
-Flask==2.3.2
+Flask
