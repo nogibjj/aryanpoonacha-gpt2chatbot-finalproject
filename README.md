@@ -1,13 +1,60 @@
-# GitHub Codespaces ♥️ Flask
+# Flask Chatbot with GPT-2
 
-Welcome to your shiny new Codespace running Flask! We've got everything fired up and running for you to explore Flask.
+This project is a simple Flask application that integrates a chatbot powered by the GPT-2 model. The chatbot can generate responses based on user input, making it a fun and interactive way to explore the capabilities of GPT-2.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+## Dependencies
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+This project requires Python 3.7 or later and the following Python libraries installed:
 
-To run this application:
+- Flask
+- Transformers
+
+You can install these dependencies using pip:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Project Structure
+The project has the following structure:
+
+app.py: This is the main file that runs the Flask application.
+
+gpt2_chatbot.py: This file contains the GPT2Chatbot class, which uses the GPT-2 model from the transformers library to generate responses.
+
+templates/: This directory contains the HTML templates for the Flask app.
+
+static/: This directory contains static files like CSS and images.
+
+requirements.txt: This file lists all of the Python dependencies for the project.
+
+Dockerfile: This file is used to build a Docker image for the project.
+
+### To run the program, you can use the following command:
 
 ```
-flask --debug run
+python app.py
 ```
+
+This will start the Flask development server, and the app will be accessible at http://localhost:5000 in your web browser.
+
+## Docker Deployment
+
+This project includes a Dockerfile for building a Docker image of the app. You can build the image using the following command:
+
+
+```
+docker build -t my-flask-app .
+```
+
+And then run it with:
+
+```
+docker run -p 4000:80 my-flask-app
+```
+
+The app will be accessible at http://localhost:4000 in your web browser.
+
+## Conclusion and Recommendations
+
+This project demonstrates the simple nature of GPT 2 and provides a clean and basic interface to chat with what is already considered to be an outdated version of itself, providing a simple archived way to interact with very old forms of GPT.
