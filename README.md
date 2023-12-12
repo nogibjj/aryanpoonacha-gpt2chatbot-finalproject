@@ -63,7 +63,7 @@ The Docker image from Dockerhub is used to directly build a container app:
 
 ![Docker](images/1.png)
 
-However, as I have already run out of credits and exceeded the number of container app deployments allowed on Azure, I am unfortunately prevented from deploying the app succefully.
+However, as I have already run out of credits and exceeded the number of container app deployments allowed on Azure, I am unfortunately prevented from deploying the app succesfully.
 
 ![Azure sucks lol](images/2.png)
 
