@@ -36,7 +36,7 @@ Dockerfile: This file is used to build a Docker image for the project.
 python app.py
 ```
 
-This will start the Flask development server, and the app will be accessible at http://localhost:5000 in your web browser.
+This will start the Flask development server, and the app will be accessible locally.
 
 ## Docker Deployment
 
@@ -52,8 +52,6 @@ And then run it with:
 ```
 docker run -p 4000:80 my-flask-app
 ```
-
-The app will be accessible at http://localhost:4000 in your web browser.
 
 The container is built and stored in a repository in Dockerhub: https://hub.docker.com/repository/docker/irevia/ids706_project_4
 
