@@ -9,7 +9,13 @@
         <header class="App-header">
             <img src="{{ url_for('static', filename='robot.jpg') }}" class="App-logo" alt="logo" />
             <p>
-                Relics Of The Modern Past - Chatting With A Local GPT-2
+                Relics Of The Modern Past - Public Consciousness Chatting With GPT-2
+            </p>
+            <p class="small">
+                This is an open-ended archival project where you can submit prompts and get responses from a simple GPT2 model.
+            </p>
+            <p class="small">
+                All submitted prompts are publicly logged, and the 30 most recent prompts and their responses are publicly showcased below. Submit your own prompt to be featured, and ensure to not submit any confidential information!
             </p>
             <p class="small">
                 Type and click submit to send your prompt to GPT2!
@@ -21,7 +27,20 @@
             {% if response %}
                 <p>{{ response }}</p>
             {% endif %}
+            {% if conversations %}
+                <h2>Recent Conversations</h2>
+                {% for conversation in conversations %}
+                    <div class="conversation">
+                        <p><strong>Prompt:</strong> {{ conversation.prompt }}</p>
+                        <p><strong>Response:</strong> {{ conversation.response }}</p>
+                        <p><strong>Timestamp:</strong> {{ conversation.timestamp }}</p>
+                    </div>
+                {% endfor %}
+            {% endif %}
         </header>
+        <p class="small">
+            Final Project for IDS 706, Fall '23
+        </p>
     </div>
 </body>
 </html>
