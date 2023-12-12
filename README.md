@@ -55,6 +55,18 @@ docker run -p 4000:80 my-flask-app
 
 The app will be accessible at http://localhost:4000 in your web browser.
 
+The container is built and stored in a repository in Dockerhub: https://hub.docker.com/repository/docker/irevia/ids706_project_4
+
+## Deployment
+
+The Docker image from Dockerhub is used to directly build a container app:
+
+![Docker](images/1.png)
+
+However, as I have already run out of credits and exceeded the number of container app deployments allowed on Azure, I am unfortunately prevented from deploying the app succefully.
+
+![Azure sucks lol](images/2.png)
+
 ## Conclusion and Recommendations
 
 This project demonstrates the simple nature of GPT 2 and provides a clean and basic interface to chat with what is already considered to be an outdated version of itself, providing a simple archived way to interact with very old forms of GPT.
