@@ -1,6 +1,6 @@
-# Flask Chatbot with GPT-2
+# Public Consciousness Flask Chatbot with GPT-2
 
-This project is a simple Flask application that integrates a chatbot powered by the GPT-2 model. The chatbot can generate responses based on user input, making it a fun and interactive way to explore the capabilities of GPT-2.
+This project is a simple Flask application that integrates a chatbot powered by the GPT-2 model. The chatbot can generate responses based on user input, making it a fun and interactive way to explore the capabilities of GPT-2. It is an open-ended archival project where you can submit prompts and get responses from a simple GPT2 model. All submitted prompts are publicly logged, and the 30 most recent prompts (as of the time you open the site) and their responses are publicly showcased below. Submit your own prompt to be featured, and ensure to not submit any confidential information!
 
 ## Dependencies
 
@@ -8,6 +8,7 @@ This project requires Python 3.7 or later and the following Python libraries ins
 
 - Flask
 - Transformers
+- Flask SQL Alchemy
 
 You can install these dependencies using pip:
 
@@ -18,7 +19,7 @@ pip install -r requirements.txt
 ## Project Structure
 The project has the following structure:
 
-app.py: This is the main file that runs the Flask application.
+app.py: This is the main file that runs the Flask application. It defines the schema for the database and handles all the post requests sent to the backend for the response from the LLM.
 
 gpt2_chatbot.py: This file contains the GPT2Chatbot class, which uses the GPT-2 model from the transformers library to generate responses.
 
@@ -53,7 +54,7 @@ And then run it with:
 docker run -p 4000:80 my-flask-app
 ```
 
-The container is built and stored in a repository in Dockerhub: https://hub.docker.com/repository/docker/irevia/ids706_project_4
+The container is built and stored in a repository in Dockerhub: [https://hub.docker.com/repository/docker/irevia/ids706_project_4](https://hub.docker.com/repository/docker/irevia/ids706-finalproject/general)
 
 ## Deployment
 
