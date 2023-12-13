@@ -19,3 +19,6 @@ tensorflow
 #web dev
 Flask
 flask_sqlalchemy
+
+#loadtesting
+locust
