@@ -4,7 +4,7 @@ This project is a simple Flask application that integrates a chatbot powered by 
 
 ## Dependencies
 
-This project requires Python 3.7 or later and the following Python libraries installed:
+This project requires Python 3.1 or later and the following Python libraries installed:
 
 - Flask
 - Transformers
@@ -54,13 +54,11 @@ And then run it with:
 docker run -p 4000:80 my-flask-app
 ```
 
-The container is built and stored in a repository in Dockerhub: [https://hub.docker.com/repository/docker/irevia/ids706_project_4](https://hub.docker.com/repository/docker/irevia/ids706-finalproject/general)
+The container is built and stored in a repository in Dockerhub: [Dockerhub Repo](https://hub.docker.com/repository/docker/irevia/ids706-finalproject/general)
 
 ## Deployment
 
-The Docker image from Dockerhub is used to directly build a container app:
-
-![Docker](images/1.png)
+The Docker image from Dockerhub is used to directly build a container app.
 
 However, as I have already run out of credits and exceeded the number of container app deployments allowed on Azure, I am unfortunately prevented from deploying the app succesfully.
 
