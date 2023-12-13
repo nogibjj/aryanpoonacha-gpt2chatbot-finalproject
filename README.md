@@ -1,5 +1,10 @@
 # Public Consciousness Flask Chatbot with GPT-2
 
+## Demonstration
+
+The video demonstration of this project can be found here: https://duke.zoom.us/rec/share/YE0LvSRxpoj45iW7TBrhBgQVs4MCn-zvkawjtfBML28-tQfJQUM8vhg20f124RR4.a2UVXOAaBSXpIc_m 
+
+
 This project is a simple Flask application that integrates a chatbot powered by the GPT-2 model. The chatbot can generate responses based on user input, making it a fun and interactive way to explore the capabilities of GPT-2. It is an open-ended archival project where you can submit prompts and get responses from a simple GPT2 model. All submitted prompts are publicly logged, and the 30 most recent prompts (as of the time you open the site) and their responses are publicly showcased below. Submit your own prompt to be featured, and ensure to not submit any confidential information!
 
 ## Dependencies
