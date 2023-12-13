@@ -78,6 +78,10 @@ The architectural diagram below summarizes the interactions between the 3 compon
 
 ![Architecture](images/diagram.png)
 
+## IaC And Data Engineering
+
+The SQL database is optimized to specifically store the basic, minimized form of data required for the application. The Dockerfile and devcontainer are set up so that the project can be easily built within a container pushed to Docker hub, that can then push the project to be deployed at an appropriate hosting service. This allows for a serverless framework that is flexible and resource-efficient.
+
 ## Conclusion and Recommendations
 
 This project demonstrates the simple nature of GPT 2 and provides a clean and basic interface to chat with what is already considered to be an outdated version of itself, providing a simple archived way to interact with very old forms of GPT and see how other people around the world do as well.
