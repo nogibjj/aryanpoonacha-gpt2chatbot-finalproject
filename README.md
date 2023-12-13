@@ -85,7 +85,12 @@ The architectural diagram below summarizes the interactions between the 3 compon
 
 ## IaC And Data Engineering
 
-The SQL database is optimized to specifically store the basic, minimized form of data required for the application. The Dockerfile and devcontainer are set up so that the project can be easily built within a container pushed to Docker hub, that can then push the project to be deployed at an appropriate hosting service. This allows for a serverless framework that is flexible and resource-efficient.
+The SQL database is optimized to specifically store the basic, minimized form of data required for the application. The Dockerfile and devcontainer are set up so that the project can be easily built within a container pushed to Docker hub, that can then push the project to be deployed at an appropriate hosting service. This allows 
+for a serverless framework that is flexible and resource-efficient.
+
+## Utilization of AI
+
+For this project, Github Copilot was used to help write the code for the flask app and frontend template. It helped ease some of the thinking through of debugging long flask traceback calls.
 
 ## Conclusion and Recommendations
 
