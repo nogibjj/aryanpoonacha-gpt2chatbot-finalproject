@@ -64,6 +64,20 @@ However, as I have already run out of credits and exceeded the number of contain
 
 ![Azure sucks lol](images/2.png)
 
+## Load Testing
+
+The load testing is included as an automated github action that uses the Locust open source framework to load test 10,000 requests per second. The job sets up a Python environment, installs Locust, and then runs the load test appropriately. You can see the github actions tab of the repo for more details.
+
+## Reliability
+
+The general reliability of this project in terms of production/deployment metrics cannot be accurately assessed; however, the load test metrics are one alternative that depict the reliability of this microservice.
+
+## Architectural Diagram
+
+The architectural diagram below summarizes the interactions between the 3 components: the flask service represented by app.py, the backend database instance, and the frontend template instance for each user.
+
+![Architecture](images/diagram.png)
+
 ## Conclusion and Recommendations
 
-This project demonstrates the simple nature of GPT 2 and provides a clean and basic interface to chat with what is already considered to be an outdated version of itself, providing a simple archived way to interact with very old forms of GPT.
+This project demonstrates the simple nature of GPT 2 and provides a clean and basic interface to chat with what is already considered to be an outdated version of itself, providing a simple archived way to interact with very old forms of GPT and see how other people around the world do as well.
