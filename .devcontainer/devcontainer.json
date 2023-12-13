@@ -1,5 +1,13 @@
 {
-  "dockerFile": "Dockerfile",
+  "name": "Python 3",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "runArgs": [ "-u", "root" ],
+  "settings": { 
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
   "forwardPorts": [5000],
   "postCreateCommand": "flask run",
   "extensions": ["ms-python.python"]
